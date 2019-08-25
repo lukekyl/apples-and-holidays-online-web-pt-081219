@@ -76,7 +76,8 @@ def all_supplies_in_holidays(holiday_hash)
       supply_type = ""
       supply.each{|type|
         new_type = ""
-        if type.to_s.include? " "
+        if type.to_s.
+        elsif type.to_s.include? " "
           type_array = ""
           type_array = type.to_s.split(" ")
           type_array.each{|n|
