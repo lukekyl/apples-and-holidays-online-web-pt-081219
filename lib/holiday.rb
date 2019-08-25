@@ -77,15 +77,19 @@ def all_supplies_in_holidays(holiday_hash)
       supply.each{|type|
         new_type = ""
         if type.to_s.include? " "
-        
+          type.to_s.split(" ")
+          type.each{|n|
+            n.capitalize!
+          }
+          new_type << type.join(" ")
         else
-          new_type = type_
+          new_type << type.to_s.capitalize
         end
         
         if supply_type == ""
-          supply_type << new_type.to_s.capitalize
+          supply_type << new_type
         else
-          supply_type << ", #{new_type.to_s.capitalize}"
+          supply_type << ", #{new_type}"
         end
        
        
