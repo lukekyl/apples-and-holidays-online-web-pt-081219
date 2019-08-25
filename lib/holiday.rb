@@ -76,14 +76,11 @@ def all_supplies_in_holidays(holiday_hash)
       supply_type = ""
       supply.each{|type|
         new_type = ""
-        
         if supply_type == ""
           supply_type << type
         else
           supply_type << ", #{type}"
         end
-       
-       
     }
       puts "  #{new_day}: #{supply_type}"
     }
