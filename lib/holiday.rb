@@ -78,9 +78,9 @@ def all_supplies_in_holidays(holiday_hash)
         new_type = ""
         
         if supply_type == ""
-          supply_type << new_type
+          supply_type << type
         else
-          supply_type << ", #{new_type}"
+          supply_type << ", #{type}"
         end
        
        
