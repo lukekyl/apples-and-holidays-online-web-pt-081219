@@ -82,7 +82,7 @@ def all_supplies_in_holidays(holiday_hash)
           type_array.each{|n|
             n.capitalize!
           }
-          new_type << type_array.join
+          new_type << type_array.join(" ")
         else
           new_type << type.to_s.capitalize
         end
